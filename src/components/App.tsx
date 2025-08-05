@@ -1,23 +1,30 @@
 import {type ReactElement, useEffect, useRef} from "react";
+//@ts-ignore
 import './App.css';
+//@ts-ignore
 import logoImage from '../assets/images/logo.svg'
+//@ts-ignore
 import mocupsImage from '../assets/images/illustration-mockups.svg'
+//@ts-ignore
 import facebookImage from '../assets/images/free-icon-facebook-3128208.png';
+//@ts-ignore
 import twitterImage from '../assets/images/free-icon-twitter-black-shape-25660.png';
+//@ts-ignore
 import instagramImage from '../assets/images/free-icon-instagram-1077042.png';
-import {uiComponents} from '../assets/data/uiComponents/ui-components.ts'
-import ScrollReveal from 'scrollreveal'
+import {uiComponents} from '../assets/data/uiComponents/ui-components.ts';
+//@ts-ignore
+import ScrollReveal from 'scrollreveal';
 import Box from "@mui/material/Box";
 
 const {Title, Paragraph, WhiteButton} = uiComponents;
 
 function App(): ReactElement {
-    const logoRef = useRef<null>(null);
-    const imageRef = useRef<null>(null);
-    const titleRef = useRef<null>(null);
-    const paragraphRef = useRef<null>(null);
-    const buttonRef = useRef<null>(null);
-    const footerRef = useRef<null>(null);
+    const logoRef = useRef(null);
+    const imageRef = useRef(null);
+    const titleRef = useRef(null);
+    const paragraphRef = useRef(null);
+    const buttonRef = useRef(null);
+    const footerRef = useRef(null);
 
     useEffect(() => {
         const sr = ScrollReveal({

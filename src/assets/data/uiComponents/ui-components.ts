@@ -1,14 +1,8 @@
 import {styled} from "@mui/material/styles";
 import {Button, Typography} from "@mui/material";
 
-interface UIComponents {
-    Title: object;
-    Paragraph: object;
-    WhiteButton: object;
-}
-
-export const uiComponents: UIComponents = {
-    Title: styled(Typography)(({ theme }) => ({
+export const uiComponents = {
+    Title: styled(Typography)({
         color: 'white',
         fontFamily: 'Poppins',
         fontSize: '2.9rem',
@@ -30,9 +24,9 @@ export const uiComponents: UIComponents = {
         '@media screen and (max-width: 500px)': {
             fontSize: '1.25rem',
         },
-    })),
+    }),
 
-    Paragraph: styled(Typography)(({ theme }) => ({
+    Paragraph: styled(Typography)({
         marginTop: '25px',
         color: 'white',
         fontWeight: '400',
@@ -61,9 +55,9 @@ export const uiComponents: UIComponents = {
         '@media screen and (max-width: 500px)': {
             fontSize: '.9rem',
         },
-    })),
+    }),
 
-    WhiteButton: styled(Button)(({ theme }) => ({
+    WhiteButton: styled(Button)({
         color: 'hsl(257, 40%, 49%)',
         backgroundColor: 'white',
         width: '11.5em',
@@ -96,5 +90,5 @@ export const uiComponents: UIComponents = {
             width: '15.5em',
             height: '3.1em'
         },
-    }))
+    })
 }
